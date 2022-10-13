@@ -30,7 +30,7 @@ class Admin extends CI_Controller
         ]);
         
         if ($this->form_validation->run() != true){
-            $this->load->view('view-form-admin');
+            $this->load->view('admin/view-form-admin');
         } else {
             $data = [
                 'kdadmin' => $this->input->post('kdadmin'),
